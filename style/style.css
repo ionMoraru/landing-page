@@ -25,8 +25,8 @@
 /*---------------------------------------navigation button*/
 .first-next-button {
   position: absolute;
-  top: -110px;
-  right: 132px;
+  top: 7vh;
+  right: 43vw;
 }
 .second-next-button {
   position: absolute;
@@ -51,7 +51,7 @@
 /*  -------------------------------------header container*/
 .main .header {
   background: no-repeat  url("../img/resources/background.png");
-  background-size:110% 100%;
+  background-size:100% 100%;
 }
 
 .main .header .logo {
@@ -61,7 +61,7 @@
 }
 
 .main .header .header-description {
-  padding: 22% 0;
+  padding: 42vh 0;
 }
 
 
@@ -73,7 +73,7 @@
   letter-spacing: 0;
   text-shadow: 0 2px 4px rgba(0,0,0,0.50);
   text-align:center;
-  width: 70vw;
+  width: 80vw;
   margin: -10% auto 1% auto;
 }
 
@@ -84,7 +84,7 @@
   color: #ffffff;
   letter-spacing: 0;
   text-align: center;
-  width: 70vw;
+  width: 80vw;
   margin: 4% auto 0 auto;
 }
 
@@ -92,8 +92,8 @@
 
 .main .second-section {
   background: no-repeat url("../img/resources/second-section.png");
-  background-size: 100%;
-  margin-top: -160px;
+  background-size: 100% 100%;
+  margin-top: -20vh;
   height: 75vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -104,7 +104,8 @@
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 160px 0 100px 0;
+  padding: 22vh 0 19vh 0;
+  position: relative;
 }
 
 /*------------------------------------------------------second-section containers*/
@@ -145,18 +146,18 @@ margin-bottom: 20px;
 }
 
 .main .second-section .ss-description p {
-  font-family:'ProximaNova-Regular';
+  font-family: 'ProximaNova-Regular';
   font-size: 24px;
-  font-size:1.5rem;
-  color:#ffffff;
-  letter-spacing:0;
-  text-align:left;
+  font-size: 1.5rem;
+  color: #ffffff;
+  letter-spacing: 0;
+  text-align: left;
 }
 
 /*------------------------------------------------------second-section iphone*/
 .main .second-section .ss-phone .iphone-screen{
-  width:267px;
-  height:523px;
+  width: 267px;
+  height: 523px;
   display: block;
   margin: 0 auto;
 }
@@ -166,11 +167,11 @@ margin-bottom: 20px;
 }
 
 .main .second-section .ss-phone .screen-1{
-  width:232px;
-  height:407px;
+  width:   232px;
+  height: 407px;
   position: absolute;
   top: 54px;
-  left:57px;
+  left: 57px;
 }
 
 .main .second-section .ss-phone .slider-controls {
@@ -243,7 +244,7 @@ margin-top: 10px;
 .main .third-section {
   background: no-repeat url("../img/resources/third-section.png");
   background-size: cover;
-  padding: 60px 0 0 0;
+  padding: 7vh 0 0 0;
   height: 90vh;
   position: relative;
 }
@@ -376,7 +377,7 @@ margin-top: 10px;
 .main .forthy-section {
   background: no-repeat url("../img/resources/forthy-section.png");
   background-size: cover;
-  padding: 100px 0 0 0;
+  padding: 20vh 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -472,4 +473,64 @@ margin-top: 10px;
   color: #ffffff;
   letter-spacing: 0;
   margin: 0 25px;
+}
+
+/*---------------------------------------------responsive*/
+
+
+@media screen and  (max-width: 1280px) {
+  .main .header {
+    background-size: 160% 100%;
+  }
+  .main .second-section {
+    padding: 22vh 0 1vh 0;
+    height: 80vh;
+    flex-wrap: wrap;
+  }
+  .main .third-section {
+    height: 76vh;
+  }
+  .main .third-section .condition-deal{
+    width: 76vh;
+    display: block;
+    margin: 8vh auto 0 auto;
+  }
+  .main .third-section .button-container button {
+    font-size: 1.3rem;
+  }
+
+  .main .forthy-section {
+    padding: 13vh 0 7vh 0;
+    height: 70vh;
+  }
+}
+
+@media screen and  (max-width: 900px) {
+  .main .header {
+    background-size: 200% 100%;
+    background-position-x: 23%;
+  }
+  .main .header .header-description {
+    padding: 34vh 0;
+  }
+  .main .header .header-description p {
+    margin: 9vh auto 0 auto;
+
+  }
+
+  .main .second-section {
+
+  }
+  .main .third-section {
+
+  }
+
+  .main .third-section .ts-title {
+    font-size: 2.5rem;
+  }
+
+
+  .main .forthy-section {
+    flex-wrap: wrap;
+  }
 }
