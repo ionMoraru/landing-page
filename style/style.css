@@ -1,0 +1,475 @@
+* {
+  padding: 0;
+  margin: 0;
+  font: 100%;
+/*  overflow-x: hidden;*/
+}
+
+/*---------------------------------------font family*/
+
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src: url('../fonts/proximareg/ProximaNova-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url('../fonts/proximabold/ProximaNovaBold.otf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*---------------------------------------navigation button*/
+.first-next-button {
+  position: absolute;
+  top: -110px;
+  right: 132px;
+}
+.second-next-button {
+  position: absolute;
+  top: -47px;
+  left: 175px;
+}
+/*  -------------------------------------main container*/
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .sections {
+  width: 100%;
+  height: 100vh;
+}
+/*  -------------------------------------header container*/
+.main .header {
+  background: no-repeat  url("../img/resources/background.png");
+  background-size:110% 100%;
+}
+
+.main .header .logo {
+  position: absolute;
+  top: 6%;
+  left: 5%;
+}
+
+.main .header .header-description {
+  padding: 22% 0;
+}
+
+
+.main .header .header-description h1 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 56px;
+  font-size: 3.5rem;
+  color: #ffffff;
+  letter-spacing: 0;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+  text-align:center;
+  width: 70vw;
+  margin: -10% auto 1% auto;
+}
+
+.main .header .header-description p {
+  font-family: 'ProximaNova-Regular';
+  font-size: 24px;
+  font-size: 1.5rem;
+  color: #ffffff;
+  letter-spacing: 0;
+  text-align: center;
+  width: 70vw;
+  margin: 4% auto 0 auto;
+}
+
+/*------------------------------------------------------second-section*/
+
+.main .second-section {
+  background: no-repeat url("../img/resources/second-section.png");
+  background-size: 100%;
+  margin-top: -160px;
+  height: 75vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 160px 0 100px 0;
+}
+
+/*------------------------------------------------------second-section containers*/
+.main .second-section .ss-container {
+  width: 350px;
+  height: 445px;
+  /*margin: 0 100px 0 100px;*/
+}
+
+/*------------------------------------------------------second-section description*/
+.main .second-section .ss-description {
+margin-left: 4%;
+}
+
+.main .second-section .ss-description h1 {
+  font-family: 'ProximaNova-Bold';
+  font-size: 40px;
+  font-size: 2.5rem;
+  color: #ffffff;
+  letter-spacing: 0;
+  text-align: left;
+  margin-bottom: 73.5px;
+}
+.main .second-section .ss-description .cup-icon {
+  font-size: 40px;
+  display: block;
+  margin: 0 auto 10.5px auto;
+}
+
+.main .second-section .ss-description h3 {
+font-family: 'ProximaNova-Bold';
+font-size: 24px;
+font-size: 1.5rem;
+color: #ffffff;
+letter-spacing: 0;
+text-align: left;
+margin-bottom: 20px;
+}
+
+.main .second-section .ss-description p {
+  font-family:'ProximaNova-Regular';
+  font-size: 24px;
+  font-size:1.5rem;
+  color:#ffffff;
+  letter-spacing:0;
+  text-align:left;
+}
+
+/*------------------------------------------------------second-section iphone*/
+.main .second-section .ss-phone .iphone-screen{
+  width:267px;
+  height:523px;
+  display: block;
+  margin: 0 auto;
+}
+
+.main .second-section .ss-phone {
+  position: relative;
+}
+
+.main .second-section .ss-phone .screen-1{
+  width:232px;
+  height:407px;
+  position: absolute;
+  top: 54px;
+  left:57px;
+}
+
+.main .second-section .ss-phone .slider-controls {
+  position: absolute;
+  width: 85%;
+  margin: 8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+
+}
+
+.main .second-section .ss-phone .slider-controls div{
+  opacity:0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  background:#d8d8d8;
+  width:10px;
+  height:10px;
+  border-radius:100%;
+  margin-right: 4px;
+
+
+}
+.main .second-section .ss-phone .slider-controls div:hover{
+  opacity:0.36;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=36)";
+  background:#000000;
+  width:12px;
+  height:12px;
+  border-radius:100%;
+  margin-right: 2px;
+}
+
+
+/*------------------------------------------------------second-section application icon*/
+.main .second-section .ss-app-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .second-section .ss-app-icon .icons-container img {
+  margin-right: 12px;
+}
+
+.main .second-section .ss-app-icon p {
+font-family:'ProximaNova-Regular';
+font-size: 24px;
+font-size:1.5rem;
+color:#ffffff;
+letter-spacing:0;
+text-align:center;
+margin-top: 10px;
+}
+
+/*---------------------------------------------------------------third-section*/
+.main .third-section {
+  background: no-repeat url("../img/resources/third-section.png");
+  background-size: cover;
+  padding: 60px 0 0 0;
+  height: 90vh;
+  position: relative;
+}
+
+ .main .third-section .btn-list-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+ }
+
+.main .third-section .ts-title {
+  font-family: 'ProximaNova-Bold';
+  font-size: 48px;
+  font-size: 3rem;
+  color: #4d7fff;
+  letter-spacing: 0;
+  text-align: left;
+  margin-left: 7%;
+}
+
+.main .third-section .button-container {
+  margin-left: 3%;
+  width: 20%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .third-section .button-container button{
+  background: #27c667;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);
+  border-radius: 100px;
+  width: 350px;
+  height: 58px;
+  font-family: 'ProximaNova-Bold';
+  font-size: 24px;
+  font-size: 1.5rem;
+  color: #ffffff;
+  letter-spacing: 0;
+  border: none;
+}
+
+.main .third-section .list-container {
+  width: 60%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 50px;
+}
+
+.main .third-section .list-container ul {
+  list-style: none;
+}
+
+.main .third-section .list-container ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+}
+
+.main .third-section .list-container ul li p {
+  font-family:'ProximaNova-Regular';
+  font-size: 19.52px;
+  font-size: 1.22rem;
+  color: #4d7fff;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.main .third-section .list-container ul li img {
+  width:30px;
+  height:30px;
+  margin-right: 21px;
+}
+
+.main .third-section .list-container ul li:nth-child(3) img{
+  width:26px;
+  height:26px;
+  margin-right: 23px;
+  margin-left: 2px;
+}
+
+.main .third-section .list-container ul li:nth-child(4) img{
+  width:20px;
+  height:36px;
+  margin-right: 26px;
+  margin-left: 5px;
+}
+
+.main .third-section .list-container h3 {
+  font-family: 'ProximaNova-Bold';
+  font-size: 32px;
+  font-size: 2rem;
+  color: #4d7fff;
+  letter-spacing: 0;
+  text-align: left;
+  margin-top: 50px;
+}
+
+.main .third-section .condition-deal {
+  font-family: 'ProximaNova-Regular';
+  font-size: 16px;
+  color: #7a7a7a;
+  letter-spacing: 0;
+  text-align: center;
+  margin-top: 2%;
+
+}
+
+/*-------------------------------------------------------------------- forthy-section*/
+.main .forthy-section {
+  background: no-repeat url("../img/resources/forthy-section.png");
+  background-size: cover;
+  padding: 100px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .forthy-section .testimonials-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 85%;
+}
+
+.main .forthy-section .testimonials-container .testimonials {
+  width: 350px;
+  height: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+
+}
+
+.main .forthy-section .testimonials-container .second-testimonial{
+  margin: 0 10%;
+}
+
+.main .forthy-section .testimonials-container .stars-container {
+  display: block;
+  margin: 0 auto;
+}
+
+.main .forthy-section .testimonials-container .person {
+  width: 160px;
+  height: 160px;
+  border-radius: 100%;
+  display: block;
+  margin: 30px auto 0 auto;
+}
+
+.main .forthy-section .testimonials-container .testimonial-text {
+  margin-top: 30px;
+  font-family: 'ProximaNova-Regular';
+  font-size: 20px;
+  font-size: 1.25rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.main .forthy-section .testimonials-container .person-name {
+  margin: 19px;
+  font-family: 'ProximaNova-Regular';
+  font-size: 24px;
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-align: right;
+}
+
+.main .forthy-section .shares-container {
+  margin-top: 80px;
+}
+.main .forthy-section .shares-container  h2 {
+  font-family: 'ProximaNova-Bold';
+  font-size: 39px;
+  color: #ffffff;
+  letter-spacing: 0;
+  text-align: center;
+}
+.main .forthy-section .shares-container  .share-btns-container {
+  margin-top: 27px;
+}
+.main .forthy-section .shares-container  .share-btns-container button {
+  background: #4d7fff;
+  border: 2px solid #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);
+  border-radius: 5px;
+  width: 176px;
+  height: 37px;
+  font-family: 'ProximaNova-Bold';
+  font-size: 16px;
+  color: #ffffff;
+  letter-spacing: 0;
+  margin: 0 25px;
+}
