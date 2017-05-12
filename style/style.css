@@ -2,11 +2,11 @@
   padding: 0;
   margin: 0;
   font-size: 100%;
-/*  overflow-x: hidden;*/
 }
-
+body {
+  overflow-x: hidden; 
+}
 /*---------------------------------------font family*/
-
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 
 @font-face {
@@ -26,7 +26,7 @@
 .first-next-button {
   position: absolute;
   top: 7vh;
-  right: 45vw;
+  right: 46vw;
 }
 .second-next-button {
   position: absolute;
@@ -68,6 +68,7 @@
 .main .header .header-description h1 {
   font-family: 'Permanent Marker', cursive;
   font-size: 56px;
+  font-size: 56px;
   font-size: 3.5rem;
   color: #ffffff;
   letter-spacing: 0;
@@ -80,6 +81,7 @@
 .main .header .header-description p {
   font-family: 'ProximaNova-Regular';
   font-size: 24px;
+  font-size: 24px;
   font-size: 1.5rem;
   color: #ffffff;
   letter-spacing: 0;
@@ -89,12 +91,16 @@
 }
 
 /*------------------------------------------------------second-section*/
-
 .main .second-section {
   background: no-repeat url("../img/resources/second-section.png");
   background-size: 100% 100%;
   margin-top: -20vh;
   height: 95vh;
+  padding: 30vh 0 10vh 0;
+  position: relative;
+}
+
+.wrap-ss {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,19 +110,18 @@
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 30vh 0 10vh 0;
-  position: relative;
+  width: 90vw;
+  margin: 0 auto;
 }
-
 /*------------------------------------------------------second-section containers*/
-.main .second-section .ss-container {
+.main .second-section .wrap-ss  .ss-container {
   width: 350px;
-  /*height: 445px;*/
 }
 
 /*------------------------------------------------------second-section description*/
-.main .second-section .ss-description h1 {
+.main .second-section .wrap-ss .ss-description h1 {
   font-family: 'ProximaNova-Bold';
+  font-size: 40px;
   font-size: 40px;
   font-size: 2.5rem;
   color: #ffffff;
@@ -124,14 +129,15 @@
   text-align: left;
   margin-bottom: 73.5px;
 }
-.main .second-section .ss-description .cup-icon {
+.main .second-section .wrap-ss .ss-description .cup-icon {
   font-size: 40px;
   display: block;
   margin: 0 auto 10.5px auto;
 }
 
-.main .second-section .ss-description h3 {
+.main .second-section .wrap-ss .ss-description h3 {
 font-family: 'ProximaNova-Bold';
+font-size: 24px;
 font-size: 24px;
 font-size: 1.5rem;
 color: #ffffff;
@@ -140,8 +146,9 @@ text-align: left;
 margin-bottom: 20px;
 }
 
-.main .second-section .ss-description p {
+.main .second-section .wrap-ss .ss-description p {
   font-family: 'ProximaNova-Regular';
+  font-size: 24px;
   font-size: 24px;
   font-size: 1.5rem;
   color: #ffffff;
@@ -150,18 +157,18 @@ margin-bottom: 20px;
 }
 
 /*------------------------------------------------------second-section iphone*/
-.main .second-section .ss-phone .iphone-screen{
+.main .second-section .wrap-ss .ss-phone .iphone-screen{
   width: 267px;
   height: 523px;
   display: block;
   margin: 0 auto;
 }
 
-.main .second-section .ss-phone {
+.main .second-section .wrap-ss .ss-phone {
   position: relative;
 }
 
-.main .second-section .ss-phone .screen-1{
+.main .second-section .wrap-ss .ss-phone .screen-1{
   width:   232px;
   height: 407px;
   position: absolute;
@@ -169,7 +176,7 @@ margin-bottom: 20px;
   left: 57px;
 }
 
-.main .second-section .ss-phone .slider-controls {
+.main .second-section .wrap-ss .ss-phone .slider-controls {
   position: absolute;
   width: 85%;
   margin: 8%;
@@ -182,7 +189,7 @@ margin-bottom: 20px;
 
 }
 
-.main .second-section .ss-phone .slider-controls div{
+.main .second-section .wrap-ss .ss-phone .slider-controls div{
   opacity:0.8;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   background:#d8d8d8;
@@ -190,10 +197,9 @@ margin-bottom: 20px;
   height:10px;
   border-radius:100%;
   margin-right: 4px;
-
-
 }
-.main .second-section .ss-phone .slider-controls div:hover{
+
+.main .second-section .wrap-ss .ss-phone .slider-controls div:hover{
   opacity:0.36;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=36)";
   background:#000000;
@@ -203,9 +209,8 @@ margin-bottom: 20px;
   margin-right: 2px;
 }
 
-
 /*------------------------------------------------------second-section application icon*/
-.main .second-section .ss-app-icon {
+.main .second-section .wrap-ss .ss-app-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -221,12 +226,13 @@ margin-bottom: 20px;
           align-items: center;
 }
 
-.main .second-section .ss-app-icon .icons-container img {
+.main .second-section .wrap-ss .ss-app-icon .icons-container img {
   margin-right: 12px;
 }
 
-.main .second-section .ss-app-icon p {
+.main .second-section .wrap-ss .ss-app-icon p {
 font-family:'ProximaNova-Regular';
+font-size: 24px;
 font-size: 24px;
 font-size:1.5rem;
 color:#ffffff;
@@ -258,6 +264,7 @@ margin-top: 10px;
 .main .third-section .ts-title {
   font-family: 'ProximaNova-Bold';
   font-size: 48px;
+  font-size: 48px;
   font-size: 3rem;
   color: #4d7fff;
   letter-spacing: 0;
@@ -284,6 +291,7 @@ margin-top: 10px;
   width: 350px;
   height: 58px;
   font-family: 'ProximaNova-Bold';
+  font-size: 24px;
   font-size: 24px;
   font-size: 1.5rem;
   color: #ffffff;
@@ -320,7 +328,6 @@ margin-top: 10px;
 
 .main .third-section .list-container ul li p {
   font-family:'ProximaNova-Regular';
-  font-size: 19.52px;
   font-size: 1.22rem;
   color: #4d7fff;
   letter-spacing: 0;
@@ -349,7 +356,6 @@ margin-top: 10px;
 
 .main .third-section .list-container h3 {
   font-family: 'ProximaNova-Bold';
-  font-size: 32px;
   font-size: 2rem;
   color: #4d7fff;
   letter-spacing: 0;
@@ -427,6 +433,7 @@ margin-top: 10px;
   padding: 0 13px;
   font-family: 'ProximaNova-Regular';
   font-size: 20px;
+  font-size: 20px;
   font-size: 1.25rem;
   color: #ffffff;
   text-align: center;
@@ -436,6 +443,7 @@ margin-top: 10px;
   margin: 19px;
   font-family: 'ProximaNova-Regular';
   font-size: 24px;
+  font-size: 24px;
   font-size: 1.5rem;
   color: #ffffff;
   text-align: right;
@@ -444,16 +452,20 @@ margin-top: 10px;
 .main .forthy-section .shares-container {
   margin-top: 10vh;
 }
+
 .main .forthy-section .shares-container  h2 {
   font-family: 'ProximaNova-Bold';
+  font-size: 38.4px;
   font-size: 2.4rem;
   color: #ffffff;
   letter-spacing: 0;
   text-align: center;
 }
+
 .main .forthy-section .shares-container  .share-btns-container {
   margin-top: 27px;
 }
+
 .main .forthy-section .shares-container  .share-btns-container button {
   background: #4d7fff;
   border: 2px solid #ffffff;
@@ -515,11 +527,13 @@ margin-top: 10px;
     padding: 0 40px;
   }
   .main .second-section {
-    flex-wrap: wrap;
     height: 100%;
-    /*padding: 24vh 0 0 0;*/
   }
-  .main .second-section .ss-app-icon {
+  .wrap-ss {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main .second-section .wrap-ss .ss-app-icon {
     margin: 90px 0;
   }
   .main .third-section {
@@ -532,7 +546,6 @@ margin-top: 10px;
     font-size: 1.8rem;
   }
   .main .third-section .condition-deal{
-    /*width: 80vh;*/
     display: block;
     margin: 8vh auto 5vh auto;
     padding: 0 20px;
@@ -542,7 +555,6 @@ margin-top: 10px;
   }
 
   .main .forthy-section {
-    /*padding: 13vh 0 7vh 0;*/
     height: 100%;
   }
 
@@ -561,9 +573,6 @@ margin-top: 10px;
     background-size: 300% 100%;
     background-position-x: 35%;
   }
-  .main .header .logo {
-    /*width: 80%;*/
-  }
   .main .header .header-description {
     margin: 30vh 0;
   }
@@ -575,42 +584,47 @@ margin-top: 10px;
     font-size: 1.15rem;
   }
   .main .second-section {
-    flex-wrap: wrap;
     height: 100%;
     padding: 24vh 0 0 0;
     background-size: 500% 100%;
   }
-  .main .second-section .ss-container {
+  .wrap-ss {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+  }
+  .main .second-section .wrap-ss .ss-container {
     padding: 0 2vh;
     margin: 0 auto;
   }
-  .main .second-section .ss-description h1 {
+  .main .second-section .wrap-ss .ss-description h1 {
     font-size: 1.5rem;
     margin-bottom: 36.5px;
+    text-align: center;
   }
-  .main .second-section .ss-description h3 {
+  .main .second-section .wrap-ss .ss-description h3 {
     font-size: 1.3rem;
     text-align: center;
   }
-  .main .second-section .ss-description p {
+  .main .second-section .wrap-ss .ss-description p {
     font-size: 1.2rem;
     text-align: justify;
   }
-  .main .second-section .ss-phone .iphone-screen {
+  .main .second-section .wrap-ss .ss-phone .iphone-screen {
     display: none;
   }
-  .main .second-section .ss-phone .screen-1 {
+  .main .second-section .wrap-ss .ss-phone .screen-1 {
     position: static;
     margin: 5vh auto;
     display: block;
   }
-  .main .second-section .ss-phone .slider-controls {
-    margin: 8% 5%;
+  .main .second-section .wrap-ss .ss-phone .slider-controls {
+    margin: 0 5%;
   }
-  .main .second-section .ss-app-icon {
+  .main .second-section .wrap-ss .ss-app-icon {
     margin: 12vh 0;
   }
-  .main .second-section .ss-app-icon p {
+  .main .second-section .wrap-ss .ss-app-icon p {
     font-size: 1.2rem;
   }
   .main .third-section {
@@ -620,7 +634,10 @@ margin-top: 10px;
     font-size: 1.9rem;
   }
   .main .third-section .btn-list-container {
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   .main .third-section .list-container {
     margin: 0 auto;
@@ -635,16 +652,12 @@ margin-top: 10px;
     font-size: 1.8rem;
     text-align: center;
   }
-
   .main .third-section .button-container {
     margin: 5vh auto 0 auto;
     height: 100%;
     width: 73%;
   }
-
-
   .main .third-section .condition-deal{
-    /*width: 80vh;*/
     display: block;
     margin: 8vh auto 5vh auto;
     padding: 0 20px;
@@ -654,11 +667,11 @@ margin-top: 10px;
   }
 
   .main .forthy-section {
-    /*padding: 13vh 0 7vh 0;*/
     height: 100%;
   }
   .main .forthy-section .testimonials-container {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .main .forthy-section .testimonials-container .third-testimonial {
     margin-top: 4vh;
@@ -670,9 +683,16 @@ margin-top: 10px;
     margin-top: 5vh;
   }
   .main .forthy-section .shares-container  .share-btns-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .main .forthy-section .shares-container  .share-btns-container button {
     margin: 5px 25px;
@@ -700,7 +720,7 @@ margin-top: 10px;
   .main .second-section {
         background-size: 600% 100%;
   }
-  .main .second-section .ss-app-icon {
+  .main .second-section .wrap-ss .ss-app-icon {
     margin: 20vh 0 10vh 0
   }
   .main .third-section .button-container {
