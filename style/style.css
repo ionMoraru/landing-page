@@ -680,7 +680,7 @@ margin-top: 10px;
 }
 
 /*-----------------------------------------------------------responsive for rotate page*/
-@media screen and  (max-width: 740px) and  (max-height: 550px) {
+@media screen and  (max-width: 740px) and  (max-height: 500px) {
   .main .header {
     background-size: 150% 100%;
     background-position-x: 0;
