@@ -26,7 +26,7 @@
 .first-next-button {
   position: absolute;
   top: 7vh;
-  right: 46.5vw;
+  right: 45vw;
 }
 .second-next-button {
   position: absolute;
@@ -73,7 +73,7 @@
   letter-spacing: 0;
   text-shadow: 0 2px 4px rgba(0,0,0,0.50);
   text-align:center;
-  width: 80vw;
+  width: 100vw;
   margin: -10% auto 1% auto;
 }
 
@@ -84,8 +84,8 @@
   color: #ffffff;
   letter-spacing: 0;
   text-align: center;
-  width: 80vw;
-  margin: 4% auto 0 auto;
+  padding: 0 20px;
+  margin: 7vh auto 0 auto;
 }
 
 /*------------------------------------------------------second-section*/
@@ -104,22 +104,17 @@
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 40vh 0 0vh 0;
+  padding: 30vh 0 10vh 0;
   position: relative;
 }
 
 /*------------------------------------------------------second-section containers*/
 .main .second-section .ss-container {
   width: 350px;
-  height: 445px;
-  margin: 0 2vw 0 2vw;
+  /*height: 445px;*/
 }
 
 /*------------------------------------------------------second-section description*/
-.main .second-section .ss-description {
-/*margin-left: 4%;*/
-}
-
 .main .second-section .ss-description h1 {
   font-family: 'ProximaNova-Bold';
   font-size: 40px;
@@ -266,8 +261,7 @@ margin-top: 10px;
   font-size: 3rem;
   color: #4d7fff;
   letter-spacing: 0;
-  text-align: left;
-  margin-left: 7%;
+  text-align: center;
   margin-top: 10vh;
 }
 
@@ -365,7 +359,7 @@ margin-top: 10px;
 
 .main .third-section .condition-deal {
   font-family: 'ProximaNova-Regular';
-  font-size: 16px;
+  font-size: 1rem;
   color: #7a7a7a;
   letter-spacing: 0;
   text-align: center;
@@ -377,7 +371,7 @@ margin-top: 10px;
 .main .forthy-section {
   background: no-repeat url("../img/resources/forthy-section.png");
   background-size: cover;
-  padding: 20vh 0 0 0;
+  padding: 10vh 0 5vh 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -397,12 +391,14 @@ margin-top: 10px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 85%;
+  width: 95vw;
+
 }
 
 .main .forthy-section .testimonials-container .testimonials {
   width: 350px;
   height: 450px;
+  margin: 0 0.9vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -411,10 +407,6 @@ margin-top: 10px;
       -ms-flex-direction: column;
           flex-direction: column;
 
-}
-
-.main .forthy-section .testimonials-container .second-testimonial{
-  margin: 0 10%;
 }
 
 .main .forthy-section .testimonials-container .stars-container {
@@ -432,6 +424,7 @@ margin-top: 10px;
 
 .main .forthy-section .testimonials-container .testimonial-text {
   margin-top: 30px;
+  padding: 0 13px;
   font-family: 'ProximaNova-Regular';
   font-size: 20px;
   font-size: 1.25rem;
@@ -449,11 +442,11 @@ margin-top: 10px;
 }
 
 .main .forthy-section .shares-container {
-  margin-top: 80px;
+  margin-top: 10vh;
 }
 .main .forthy-section .shares-container  h2 {
   font-family: 'ProximaNova-Bold';
-  font-size: 39px;
+  font-size: 2.4rem;
   color: #ffffff;
   letter-spacing: 0;
   text-align: center;
@@ -476,10 +469,10 @@ margin-top: 10px;
 }
 
 /*---------------------------------------------responsive*/
-@media screen and  (min-width: 1500px) and (max-width: 2000px) {
+@media screen and  (min-width: 1250px) and (max-width: 3000px) {
   .main .sections {
     width: 100%;
-    height: 80vh;
+    height: 100%;
   }
   .main .header {
     height: 100vh;
@@ -489,79 +482,196 @@ margin-top: 10px;
   }
   .main .second-section {
     width: 100%;
-    height: 70vh;
+    height: 100%;
   }
   .main .third-section .condition-deal {
     padding: 8vh 0 6vh 0;
   }
   .main .forthy-section{
     width: 100%;
-    height: 70vh;
+    height: 100%;
   }
 }
 
 @media screen and  (max-width: 1500px) {
   .main .header {
     background-size: 110% 100%;
-    /*background-position-x: 23%;*/
   }
 }
 
-@media screen and  (max-width: 1280px) {
+/*------------------------------------------------------------- ipad and ipad pro responsive*/
+@media screen and  (min-width: 750px) and  (max-width: 1280px) {
   .main .header {
-    background-size: 150% 100%;
+    background-size: 180% 100%;
     background-position-x: 23%;
   }
+  .main .header .header-description {
+    margin: 35vh 0;
+  }
+  .main .header .header-description h1 {
+    font-size: 3.2rem;
+  }
+  .main .header .header-description p {
+    padding: 0 40px;
+  }
   .main .second-section {
-    /*padding: 22vh 0 1vh 0;*/
-    /*height: 80vh;*/
     flex-wrap: wrap;
+    height: 100%;
+    /*padding: 24vh 0 0 0;*/
+  }
+  .main .second-section .ss-app-icon {
+    margin: 90px 0;
   }
   .main .third-section {
-    /*height: 76vh;*/
+    height: 100%;
+  }
+  .main .third-section .ts-title {
+    font-size: 2.5rem;
+  }
+  .main .third-section .list-container h3 {
+    font-size: 1.8rem;
   }
   .main .third-section .condition-deal{
-    width: 80vh;
+    /*width: 80vh;*/
     display: block;
-    margin: 8vh auto 0 auto;
+    margin: 8vh auto 5vh auto;
+    padding: 0 20px;
   }
   .main .third-section .button-container button {
-    /*font-size: 1.3rem;*/
+    font-size: 1.3rem;
   }
 
   .main .forthy-section {
     /*padding: 13vh 0 7vh 0;*/
-    /*height: 70vh;*/
+    height: 100%;
   }
+
 }
 
-@media screen and  (max-width: 900px) {
+@media screen and  (max-width: 750px) {
+  /*---------------------------------------navigation button*/
+  .first-next-button {
+    display: none;
+  }
+  .second-next-button {
+    display: none;
+  }
+
   .main .header {
-    background-size: 200% 100%;
-    background-position-x: 23%;
+    background-size: 300% 100%;
+    background-position-x: 35%;
+  }
+  .main .header .logo {
+    /*width: 80%;*/
   }
   .main .header .header-description {
-    /*padding: 34vh 0;*/
+    margin: 30vh 0;
+  }
+  .main .header .header-description h1 {
+    font-size: 1.7rem;
   }
   .main .header .header-description p {
-    /*margin: 9vh auto 0 auto;*/
-    /*width: 75vh;*/
-
+    padding: 0 40px;
+    font-size: 1.15rem;
   }
-
   .main .second-section {
-
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 24vh 0 0 0;
+    background-size: 500% 100%;
+  }
+  .main .second-section .ss-container {
+    padding: 0 2vh;
+    margin: 0 auto;
+  }
+  .main .second-section .ss-description h1 {
+    font-size: 1.5rem;
+    margin-bottom: 36.5px;
+  }
+  .main .second-section .ss-description h3 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .main .second-section .ss-description p {
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+  .main .second-section .ss-phone .iphone-screen {
+    display: none;
+  }
+  .main .second-section .ss-phone .screen-1 {
+    position: static;
+    margin: 3vh auto;
+    display: block;
+  }
+  .main .second-section .ss-app-icon {
+    margin: 12vh 0;
+  }
+  .main .second-section .ss-app-icon p {
+    font-size: 1.2rem;
   }
   .main .third-section {
-
+    height: 100%;
   }
-
   .main .third-section .ts-title {
-    /*font-size: 2.5rem;*/
+    font-size: 1.9rem;
+  }
+  .main .third-section .btn-list-container {
+    flex-direction: column-reverse;
+  }
+  .main .third-section .list-container {
+    margin-top: 0px;
+    padding: 0 2vh;
+    width: 92%;
+    height: 100%;
+  }
+  .main .third-section .list-container ul li {
+    margin-top: 20px;
+  }
+  .main .third-section .list-container h3 {
+    font-size: 1.8rem;
+    text-align: center;
   }
 
+  .main .third-section .button-container {
+    margin: 5vh auto 0 auto;
+    height: 100%;
+    width: 73%;
+  }
+
+
+  .main .third-section .condition-deal{
+    /*width: 80vh;*/
+    display: block;
+    margin: 8vh auto 5vh auto;
+    padding: 0 20px;
+  }
+  .main .third-section .button-container button {
+    font-size: 1.3rem;
+  }
 
   .main .forthy-section {
+    /*padding: 13vh 0 7vh 0;*/
+    height: 100%;
+  }
+  .main .forthy-section .testimonials-container {
     flex-wrap: wrap;
+  }
+  .main .forthy-section .testimonials-container .third-testimonial {
+    margin-top: 4vh;
+  }
+  .main .forthy-section .shares-container  h2 {
+    font-size: 2rem;
+  }
+  .main .forthy-section .shares-container {
+    margin-top: 5vh;
+  }
+  .main .forthy-section .shares-container  .share-btns-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .forthy-section .shares-container  .share-btns-container button {
+    margin: 5px 25px;
   }
 }
