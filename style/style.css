@@ -559,7 +559,7 @@ margin-top: 10px;
 
   .main .header {
     background-size: 300% 100%;
-    background-position-x: 35%;
+    background-position-x: 40%;
   }
   .main .header .logo {
     /*width: 80%;*/
@@ -601,8 +601,11 @@ margin-top: 10px;
   }
   .main .second-section .ss-phone .screen-1 {
     position: static;
-    margin: 3vh auto;
+    margin: 5vh auto;
     display: block;
+  }
+  .main .second-section .ss-phone .slider-controls {
+    margin: 8% 5%;
   }
   .main .second-section .ss-app-icon {
     margin: 12vh 0;
@@ -620,7 +623,7 @@ margin-top: 10px;
     flex-direction: column-reverse;
   }
   .main .third-section .list-container {
-    margin-top: 0px;
+    margin: 0 auto;
     padding: 0 2vh;
     width: 92%;
     height: 100%;
@@ -673,5 +676,35 @@ margin-top: 10px;
   }
   .main .forthy-section .shares-container  .share-btns-container button {
     margin: 5px 25px;
+  }
+}
+
+/*-----------------------------------------------------------responsive for rotate page*/
+@media screen and  (max-width: 750px) and  (max-height: 550px) {
+  .main .header {
+    background-size: 150% 100%;
+    background-position-x: 0;
+  }
+  .main .header .logo {
+    width: 30%;
+  }
+  .main .header .header-description {
+    margin: 40vh 0;
+  }
+  .main .header .header-description h1 {
+    font-size: 1.5rem;
+  }
+  .main .header .header-description p {
+    font-size: 1.1rem;
+  }
+
+  .main .second-section .ss-app-icon {
+    margin: 20vh 0 10vh 0
+  }
+  .main .third-section .button-container {
+    width: 53%;
+  }
+  .main .forthy-section .testimonials-container .third-testimonial {
+    margin-top: 8vh;
   }
 }
