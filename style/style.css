@@ -531,6 +531,9 @@ margin-top: 10px;
   .hide {
     display: none;
   }
+  .main .header {
+    background-position: 50%;
+  }
   .main .header .header-description {
     margin: 35vh 0;
   }
@@ -585,9 +588,6 @@ margin-top: 10px;
   }
   .second-next-button {
     display: none;
-  }
-  .main .header {
-
   }
   .main .second-section {
     padding: 23vh 0 0 0;
@@ -652,7 +652,7 @@ margin-top: 10px;
   }
 
   .main .header {
-
+    background-position-x: 50%;
   }
   .main .header .header-description {
     margin: 35vh 0;
@@ -822,9 +822,6 @@ margin-top: 10px;
     /*----------------hide elemetn br for description text in header*/
   .hide {
     display: none;
-  }
-  .main .header {
-    
   }
   .main .header .logo {
     width: 40%;
