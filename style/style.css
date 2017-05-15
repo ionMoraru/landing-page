@@ -591,6 +591,7 @@ margin-top: 10px;
   }
   .main .second-section {
     padding: 23vh 0 0 0;
+    position: static;
   }
   .main .second-section .wrap-ss  .ss-description {
     padding: 0 12px;
@@ -634,6 +635,9 @@ margin-top: 10px;
     border-radius:100%;
     margin-right: 2px;
   }
+  .main .third-section {
+    position: static;
+  }
 
 }
 
@@ -668,6 +672,7 @@ margin-top: 10px;
     height: 100%;
     padding: 24vh 0 0 0;
     background-size: 500% 100%;
+    position: static;
   }
   .wrap-ss {
     -ms-flex-wrap: wrap;
@@ -739,6 +744,7 @@ margin-top: 10px;
   }
   .main .third-section {
     height: 100%;
+    position: static;
   }
   .main .third-section .ts-title {
     font-size: 1.9rem;
@@ -836,10 +842,14 @@ margin-top: 10px;
     font-size: 1.1rem;
   }
   .main .second-section {
-        background-size: 669% 100%;
+    background-size: 669% 100%;
+    position: static;
   }
   .main .second-section .wrap-ss .ss-app-icon {
     margin: 20vh 0 10vh 0
+  }
+  .main .third-section {
+    position: static;
   }
   .main .third-section .button-container {
     width: 53%;
