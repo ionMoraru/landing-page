@@ -69,6 +69,7 @@ body {
   font-family: 'Permanent Marker', cursive;
   font-size: 56px;
   font-size: 56px;
+  font-size: 56px;
   font-size: 3.5rem;
   color: #ffffff;
   letter-spacing: 0;
@@ -80,6 +81,7 @@ body {
 
 .main .header .header-description p {
   font-family: 'ProximaNova-Regular';
+  font-size: 24px;
   font-size: 24px;
   font-size: 24px;
   font-size: 1.5rem;
@@ -123,6 +125,7 @@ body {
   font-family: 'ProximaNova-Bold';
   font-size: 40px;
   font-size: 40px;
+  font-size: 40px;
   font-size: 2.5rem;
   color: #ffffff;
   letter-spacing: 0;
@@ -139,6 +142,7 @@ body {
 font-family: 'ProximaNova-Bold';
 font-size: 24px;
 font-size: 24px;
+font-size: 24px;
 font-size: 1.5rem;
 color: #ffffff;
 letter-spacing: 0;
@@ -148,6 +152,7 @@ margin-bottom: 20px;
 
 .main .second-section .wrap-ss .ss-description p {
   font-family: 'ProximaNova-Regular';
+  font-size: 24px;
   font-size: 24px;
   font-size: 24px;
   font-size: 1.5rem;
@@ -247,6 +252,7 @@ margin-bottom: 20px;
 font-family:'ProximaNova-Regular';
 font-size: 24px;
 font-size: 24px;
+font-size: 24px;
 font-size:1.5rem;
 color:#ffffff;
 letter-spacing:0;
@@ -278,6 +284,7 @@ margin-top: 10px;
   font-family: 'ProximaNova-Bold';
   font-size: 48px;
   font-size: 48px;
+  font-size: 48px;
   font-size: 3rem;
   color: #4d7fff;
   letter-spacing: 0;
@@ -299,11 +306,13 @@ margin-top: 10px;
 
 .main .third-section .button-container button{
   background: #27c667;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);
+          box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);
   border-radius: 100px;
   width: 350px;
   height: 58px;
   font-family: 'ProximaNova-Bold';
+  font-size: 24px;
   font-size: 24px;
   font-size: 24px;
   font-size: 1.5rem;
@@ -341,6 +350,7 @@ margin-top: 10px;
 
 .main .third-section .list-container ul li p {
   font-family:'ProximaNova-Regular';
+  font-size: 19.52px;
   font-size: 1.22rem;
   color: #4d7fff;
   letter-spacing: 0;
@@ -369,6 +379,7 @@ margin-top: 10px;
 
 .main .third-section .list-container h3 {
   font-family: 'ProximaNova-Bold';
+  font-size: 32px;
   font-size: 2rem;
   color: #4d7fff;
   letter-spacing: 0;
@@ -378,6 +389,7 @@ margin-top: 10px;
 
 .main .third-section .condition-deal {
   font-family: 'ProximaNova-Regular';
+  font-size: 16px;
   font-size: 1rem;
   color: #7a7a7a;
   letter-spacing: 0;
@@ -447,6 +459,7 @@ margin-top: 10px;
   font-family: 'ProximaNova-Regular';
   font-size: 20px;
   font-size: 20px;
+  font-size: 20px;
   font-size: 1.25rem;
   color: #ffffff;
   text-align: center;
@@ -455,6 +468,7 @@ margin-top: 10px;
 .main .forthy-section .testimonials-container .person-name {
   margin: 19px;
   font-family: 'ProximaNova-Regular';
+  font-size: 24px;
   font-size: 24px;
   font-size: 24px;
   font-size: 1.5rem;
@@ -469,6 +483,7 @@ margin-top: 10px;
 .main .forthy-section .shares-container  h2 {
   font-family: 'ProximaNova-Bold';
   font-size: 38.4px;
+  font-size: 38.4px;
   font-size: 2.4rem;
   color: #ffffff;
   letter-spacing: 0;
@@ -482,7 +497,8 @@ margin-top: 10px;
 .main .forthy-section .shares-container  .share-btns-container button {
   background: #4d7fff;
   border: 2px solid #ffffff;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);
+          box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);
   border-radius: 5px;
   width: 176px;
   height: 37px;
@@ -644,9 +660,9 @@ margin-top: 10px;
 
 @media screen and  (max-width: 750px) {
   /*----------------hide elemetn br for description text in header*/
-.hide {
-  display: none;
-}
+  .hide {
+    display: none;
+  }
   /*---------------------------------------navigation button*/
   .first-next-button {
     display: none;
@@ -675,9 +691,12 @@ margin-top: 10px;
     position: static;
   }
   .wrap-ss {
-    -ms-flex-wrap: wrap;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
+     display: flex;
+      -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-
   }
   .main .second-section .wrap-ss .ss-container {
     padding: 0 2vh;
@@ -713,6 +732,7 @@ margin-top: 10px;
     margin: 5vh auto;
     display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -752,6 +772,7 @@ margin-top: 10px;
   .main .third-section .btn-list-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
@@ -781,6 +802,7 @@ margin-top: 10px;
   .main .third-section .button-container {
     display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -809,9 +831,11 @@ margin-top: 10px;
   .main .forthy-section .shares-container  .share-btns-container {
     display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     -webkit-box-align: center;
