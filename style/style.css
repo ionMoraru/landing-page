@@ -231,8 +231,16 @@ margin-bottom: 20px;
           align-items: center;
 }
 
+.main .second-section .wrap-ss .ss-app-icon .icons-container  {
+
+}
+
 .main .second-section .wrap-ss .ss-app-icon .icons-container img {
-  margin-right: 12px;
+  display: block;
+  margin: 15px auto 0 auto;
+  width: 180px;
+  max-width: 100%;
+  height: 60px;
 }
 
 .main .second-section .wrap-ss .ss-app-icon p {
@@ -516,8 +524,17 @@ margin-top: 10px;
   }
 }
 
+@media screen and  (min-width: 1100px) and  (max-width: 1280px) {
+  .main .second-section {
+    padding: 23vh 0 12vh 0 !important;
+}
+}
 /*------------------------------------------------------------- ipad and ipad pro responsive*/
 @media screen and  (min-width: 750px) and  (max-width: 1280px) {
+  /*----------------hide elemetn br for description text in header*/
+.hide {
+  display: none;
+}
   .main .header {
     background-size: 140% 100%;
     background-position-x: 23%;
@@ -637,6 +654,10 @@ margin-top: 10px;
 
 
 @media screen and  (max-width: 750px) {
+  /*----------------hide elemetn br for description text in header*/
+.hide {
+  display: none;
+}
   /*---------------------------------------navigation button*/
   .first-next-button {
     display: none;
@@ -814,6 +835,10 @@ margin-top: 10px;
 
 /*-----------------------------------------------------------responsive for rotate page*/
 @media screen and  (max-width: 740px) and  (max-height: 450px) {
+    /*----------------hide elemetn br for description text in header*/
+  .hide {
+    display: none;
+  }
   .main .header {
     background-size: 150% 100%;
     background-position-x: 0;
@@ -822,7 +847,7 @@ margin-top: 10px;
     width: 40%;
   }
   .main .header .header-description {
-    margin: 40vh 0;
+    margin: 47vh 0;
   }
   .main .header .header-description h1 {
     font-size: 1.5rem;
