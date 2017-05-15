@@ -51,7 +51,7 @@ body {
 /*  -------------------------------------header container*/
 .main .header {
   background: no-repeat  url("../img/resources/background.png") fixed;
-  background-size:100% 100%;
+  background-size: cover;
 }
 
 .main .header .logo {
@@ -518,11 +518,7 @@ margin-top: 10px;
   }
 }
 
-@media screen and  (max-width: 1500px) {
-  .main .header {
-    background-size: 110% 100%;
-  }
-}
+
 
 @media screen and  (min-width: 1100px) and  (max-width: 1280px) {
   .main .second-section {
@@ -532,12 +528,8 @@ margin-top: 10px;
 /*------------------------------------------------------------- ipad and ipad pro responsive*/
 @media screen and  (min-width: 750px) and  (max-width: 1280px) {
   /*----------------hide elemetn br for description text in header*/
-.hide {
-  display: none;
-}
-  .main .header {
-    background-size: 140% 100%;
-    background-position-x: 23%;
+  .hide {
+    display: none;
   }
   .main .header .header-description {
     margin: 35vh 0;
@@ -584,13 +576,7 @@ margin-top: 10px;
 
 }
 
-/*-------------------------------*/
-@media screen and  (min-width: 800px) and  (max-width: 1000px) {
-  .main .header {
-    background-size: 170% 100%;
-    background-position-x: 23%;
-  }
-}
+
 /*-----------------------------------------------------------responsive for ipad*/
 @media screen and  (min-width: 750px) and  (max-width: 800px) {
   /*---------------------------------------navigation button*/
@@ -601,8 +587,7 @@ margin-top: 10px;
     display: none;
   }
   .main .header {
-    background-size: 210% 100%;
-    background-position-x: 30%;
+
   }
   .main .second-section {
     padding: 23vh 0 0 0;
@@ -667,8 +652,7 @@ margin-top: 10px;
   }
 
   .main .header {
-    background-size: 300% 100%;
-    background-position-x: 35%;
+
   }
   .main .header .header-description {
     margin: 35vh 0;
@@ -840,8 +824,7 @@ margin-top: 10px;
     display: none;
   }
   .main .header {
-    background-size: 150% 100%;
-    background-position-x: 0;
+    
   }
   .main .header .logo {
     width: 40%;
