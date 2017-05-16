@@ -48,7 +48,7 @@ body {
 
 .main .sections {
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 /*  -------------------------------------header container*/
 .main .header {
@@ -63,7 +63,7 @@ body {
 }
 
 .main .header .header-description {
-  margin: 50% 0;
+  margin: 50vh 0;
 }
 
 
@@ -77,7 +77,7 @@ body {
   letter-spacing: 0;
   text-shadow: 0 2px 4px rgba(0,0,0,0.50);
   text-align:center;
-  width: 100%;
+  width: 100vw;
   margin: -10% auto 1% auto;
 }
 
@@ -91,20 +91,21 @@ body {
   letter-spacing: 0;
   text-align: center;
   padding: 0 20px;
-  margin: 4% auto 0 auto;
+  margin: 7vh auto 0 auto;
 }
 
 /*------------------------------------------------------second-section*/
 .main .second-section {
   background: no-repeat url("../img/resources/second-section.png");
   background-size: 100% 100%;
-  margin-top: -11.5%;
-  padding: 20% 0 12% 0;
+  margin-top: -20vh;
+  height: 95vh;
+  padding: 23vh 0 12vh 0;
   position: relative;
 }
 
 .wrap-ss {
-  /*display: -webkit-box;*/
+  display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -116,7 +117,7 @@ body {
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 90%;
+  width: 90vw;
   margin: 0 auto;
 }
 /*------------------------------------------------------second-section containers*/
@@ -189,7 +190,7 @@ margin-bottom: 20px;
   position: absolute;
   width: 85%;
   margin: 8%;
-  /*display: -webkit-box;*/
+  display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -206,28 +207,28 @@ margin-bottom: 20px;
 
 
 .main .second-section .wrap-ss .ss-phone .slider-controls div{
-  opacity: 0.8;
+  opacity:0.8;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-  background: #d8d8d8;
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
+  background:#d8d8d8;
+  width:10px;
+  height:10px;
+  border-radius:100%;
   margin-right: 4px;
 }
 
 .main .second-section .wrap-ss .ss-phone .slider-controls div:hover{
-  opacity: 0.36;
+  opacity:0.36;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=36)";
-  background: #000000;
-  width: 12px;
-  height: 12px;
-  border-radius: 100%;
+  background:#000000;
+  width:12px;
+  height:12px;
+  border-radius:100%;
   margin-right: 2px;
 }
 
 /*------------------------------------------------------second-section application icon*/
 .main .second-section .wrap-ss .ss-app-icon {
-  /*display: -webkit-box;*/
+  display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -269,12 +270,12 @@ margin-bottom: 20px;
 .main .third-section {
   background: no-repeat url("../img/resources/third-section.png");
   background-size: cover;
-  /*height: 100vh;*/
+  height: 100vh;
   position: relative;
 }
 
  .main .third-section .btn-list-container {
-  /*display: -webkit-box;*/
+  display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -290,18 +291,21 @@ margin-bottom: 20px;
 
 .main .third-section .ts-title {
   font-family: 'ProximaNova-Bold';
+  font-size: 48px;
+  font-size: 48px;
+  font-size: 48px;
   font-size: 3rem;
   color: #4d7fff;
   letter-spacing: 0;
   text-align: center;
-  margin-top: 7%;
+  margin-top: 10vh;
 }
 
 .main .third-section .button-container {
   margin-left: 5%;
   width: 20%;
   height: 400px;
-  /*display: -webkit-box;*/
+  display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -330,7 +334,7 @@ margin-bottom: 20px;
 .main .third-section .list-container {
   width: 60%;
   height: 400px;
-  /*display: -webkit-box;*/
+  display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -404,7 +408,7 @@ margin-bottom: 20px;
   color: #7a7a7a;
   letter-spacing: 0;
   text-align: center;
-  padding: 2% 0 6% 0;
+  padding: 2vh 0 6vh 0;
 
 }
 
@@ -412,7 +416,7 @@ margin-bottom: 20px;
 .main .forthy-section {
   background: no-repeat url("../img/resources/forthy-section.png");
   background-size: cover;
-  padding: 7% 0 5% 0;
+  padding: 10vh 0 5vh 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -436,15 +440,15 @@ margin-bottom: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 95%;
+  width: 95vw;
 
 }
 
 .main .forthy-section .testimonials-container .testimonials {
   width: 350px;
   height: 450px;
-  margin: 0 1%;
-  /*display: -webkit-box;*/
+  margin: 0 0.9vw;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -493,7 +497,7 @@ margin-bottom: 20px;
 }
 
 .main .forthy-section .shares-container {
-  margin-top: 5%;
+  margin-top: 10vh;
 }
 
 .main .forthy-section .shares-container  h2 {
@@ -578,8 +582,7 @@ margin-bottom: 20px;
   }
   .main .second-section {
     height: 100%;
-    padding: 23% 0 0 0;
-    margin-top: -20%;
+    padding: 23vh 0 0 0;
   }
   .wrap-ss {
     display: -webkit-box;
@@ -604,7 +607,7 @@ margin-bottom: 20px;
   }
   .main .third-section .condition-deal{
     display: block;
-    margin: 8% auto 5% auto;
+    margin: 8vh auto 5vh auto;
     padding: 0 20px;
   }
   .main .third-section .button-container button {
@@ -629,9 +632,8 @@ margin-bottom: 20px;
     display: none;
   }
   .main .second-section {
-    padding: 37% 0 0 0;
+    padding: 23vh 0 0 0;
     position: static;
-    margin-top: -30%;
   }
   .main .second-section .wrap-ss  .ss-description {
     padding: 0 12px;
@@ -649,12 +651,12 @@ margin-bottom: 20px;
       flex-wrap: wrap;
   }
   .main .second-section .wrap-ss .ss-phone {
-    margin-top: 5%;
+    margin-top: 7vh;
   }
   .main .second-section .wrap-ss .ss-description .text-controls-responsive {
     width: 275px;
     display: block;
-    margin: 10% auto;
+    margin: 5vh auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -707,7 +709,7 @@ margin-bottom: 20px;
     background-position-x: 50%;
   }
   .main .header .header-description {
-    margin: 60% 0;
+    margin: 35vh 0;
   }
   .main .header .header-description h1 {
     font-size: 1.7rem;
@@ -718,10 +720,9 @@ margin-bottom: 20px;
   }
   .main .second-section {
     height: 100%;
-    padding: 30% 0 0 0;
+    padding: 24vh 0 0 0;
     background-size: 500% 100%;
     position: static;
-    margin-top: -30%;
   }
   .wrap-ss {
      display: -webkit-box;
@@ -733,7 +734,7 @@ margin-bottom: 20px;
        flex-wrap: wrap;
   }
   .main .second-section .wrap-ss .ss-container {
-    padding: 0 2%;
+    padding: 0 2vh;
     margin: 0 auto;
   }
   .main .second-section .wrap-ss .ss-description h1 {
@@ -754,7 +755,7 @@ margin-bottom: 20px;
   }
   .main .second-section .wrap-ss .ss-phone .screen-1 {
     position: static;
-    margin: 5% auto 10%;
+    margin: 5vh auto 6vh;
     display: block;
   }
   .main .second-section .wrap-ss .ss-phone .slider-controls {
@@ -763,7 +764,7 @@ margin-bottom: 20px;
   .main .second-section .wrap-ss .ss-description .text-controls-responsive {
     width: 275px;
     display: block;
-    margin: 10% auto;
+    margin: 5vh auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -776,23 +777,23 @@ margin-bottom: 20px;
   .main .second-section .wrap-ss .ss-description .text-controls-responsive div{
     opacity:0.8;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-    background: #d8d8d8;
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
+    background:#d8d8d8;
+    width:10px;
+    height:10px;
+    border-radius:100%;
     margin-right: 4px;
   }
   .main .second-section .wrap-ss .ss-description .text-controls-responsive div:hover{
-    opacity: 0.36;
+    opacity:0.36;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=36)";
-    background: #000000;
-    width: 12px;
-    height: 12px;
-    border-radius: 100%;
+    background:#000000;
+    width:12px;
+    height:12px;
+    border-radius:100%;
     margin-right: 2px;
   }
   .main .second-section .wrap-ss .ss-app-icon {
-    margin: 15% 0;
+    margin: 12vh 0;
   }
   .main .second-section .wrap-ss .ss-app-icon p {
     font-size: 1.2rem;
@@ -813,7 +814,7 @@ margin-bottom: 20px;
   }
   .main .third-section .list-container {
     margin: 0 auto;
-    padding: 0 2%;
+    padding: 0 2vh;
     width: 92%;
     height: 100%;
   }
@@ -825,13 +826,13 @@ margin-bottom: 20px;
     text-align: center;
   }
   .main .third-section .button-container {
-    margin: 5% auto 0 auto;
+    margin: 5vh auto 0 auto;
     height: 100%;
     width: 73%;
   }
   .main .third-section .condition-deal{
     display: block;
-    margin: 8% auto ;
+    margin: 8vh auto 5vh auto;
     padding: 0 20px;
   }
   .main .third-section .button-container {
@@ -861,13 +862,13 @@ margin-bottom: 20px;
       flex-wrap: wrap;
   }
   .main .forthy-section .testimonials-container .third-testimonial {
-    margin-top: 10%;
+    margin-top: 4vh;
   }
   .main .forthy-section .shares-container  h2 {
     font-size: 2rem;
   }
   .main .forthy-section .shares-container {
-    margin-top: 5%;
+    margin-top: 5vh;
   }
   .main .forthy-section .shares-container  .share-btns-container {
     display: -webkit-box;
@@ -898,7 +899,7 @@ margin-bottom: 20px;
     width: 40%;
   }
   .main .header .header-description {
-    margin: 27% 0;
+    margin: 47vh 0;
   }
   .main .header .header-description h1 {
     font-size: 1.5rem;
@@ -909,10 +910,9 @@ margin-bottom: 20px;
   .main .second-section {
     background-size: 669% 100%;
     position: static;
-    padding: 20% 0 0 0;
   }
   .main .second-section .wrap-ss .ss-app-icon {
-    margin: 15% 0 10% 0
+    margin: 20vh 0 10vh 0
   }
   .main .third-section {
     position: static;
@@ -921,6 +921,6 @@ margin-bottom: 20px;
     width: 53%;
   }
   .main .forthy-section .testimonials-container .third-testimonial {
-    margin-top: 8%;
+    margin-top: 8vh;
   }
 }
