@@ -54,6 +54,7 @@ body {
 .main .header {
   background: no-repeat  url("../img/resources/background.png") fixed;
   background-size: cover;
+
 }
 
 .main .header .logo {
@@ -98,9 +99,9 @@ body {
 .main .second-section {
   background: no-repeat url("../img/resources/second-section.png");
   background-size: 100% 100%;
-  margin-top: -20vh;
-  height: 95vh;
-  padding: 23vh 0 12vh 0;
+  margin-top: -25%;
+  height: auto;
+  padding: 27vh 0 14vh 0;
   position: relative;
 }
 
@@ -270,7 +271,7 @@ body {
 .main .third-section {
   background: no-repeat url("../img/resources/third-section.png");
   background-size: cover;
-  height: 100vh;
+  height: auto;
   position: relative;
 }
 
@@ -407,7 +408,7 @@ body {
   color: #7a7a7a;
   letter-spacing: 0;
   text-align: center;
-  padding: 2vh 0 6vh 0;
+  padding: 14vh 0 6vh 0;
 
 }
 
@@ -529,43 +530,25 @@ body {
 }
 
 /*---------------------------------------------responsive*/
-@media screen and  (min-width: 1250px) and (max-width: 3000px) {
-  .main .sections {
-    width: 100%;
-    height: auto;
-  }
-  .main .header {
-    height: auto;
-  }
-  .main .header .header-description {
-    margin: 50vh 0;
-  }
+@media screen and  (min-width: 1500px) and (max-width: 3000px) {
   .main .second-section {
-    width: 100%;
-    height: auto;
-    margin-top: -17%;
-  }
-  .main .third-section {
-    height: auto;
-  }
-  .main .third-section .condition-deal {
-    padding: 8vh 0 6vh 0;
-  }
-  .main .forthy-section{
-    width: 100%;
-    height: auto;
+    margin-top: -20%
   }
 }
-
-
-
-@media screen and  (min-width: 1100px) and  (max-width: 1280px) {
+@media screen and  (max-width: 1000px) {
+  .first-next-button {
+    display: none;
+  }
+  .second-next-button {
+    display: none;
+  }
   .main .second-section {
-    padding: 23vh 0 12vh 0 !important;
-}
+    background-size: 500% 100%;
+    margin-top: -15% !important;
+  }
 }
 /*------------------------------------------------------------- ipad and ipad pro responsive*/
-@media screen and  (min-width: 750px) and  (max-width: 1280px) {
+@media screen and  (min-width: 750px) and  (max-width: 1300px) {
   /*----------------hide elemetn br for description text in header*/
   .hide {
     display: none;
@@ -584,8 +567,8 @@ body {
     padding: 0 40px;
   }
   .main .second-section {
-    height: auto;
-    padding: 23vh 0 0 0;
+    margin-top: -16%;
+    padding: 27vh 0 9vh 0;
   }
   .wrap-ss {
     display: -webkit-box;
@@ -597,7 +580,7 @@ body {
       flex-wrap: wrap;
   }
   .main .second-section .wrap-ss .ss-app-icon {
-    margin: 90px 0;
+    margin: 90px 0 0;
   }
   .main .third-section {
     height: auto;
@@ -628,15 +611,8 @@ body {
 /*-----------------------------------------------------------responsive for ipad*/
 @media screen and  (min-width: 750px) and  (max-width: 800px) {
   /*---------------------------------------navigation button*/
-  .first-next-button {
-    display: none;
-  }
-  .second-next-button {
-    display: none;
-  }
   .main .second-section {
-    padding: 23vh 0 0 0;
-    position: static;
+    margin-top: -16% !important;
   }
   .main .second-section .wrap-ss  .ss-description {
     padding: 0 12px;
@@ -653,9 +629,7 @@ body {
     -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   }
-  .main .second-section .wrap-ss .ss-phone {
-    margin-top: 7vh;
-  }
+
   .main .second-section .wrap-ss .ss-description .text-controls-responsive {
     width: 275px;
     display: block;
@@ -727,6 +701,7 @@ body {
     padding: 24vh 0 0 0;
     background-size: 500% 100%;
     position: static;
+    margin-top: -17vh !important;
   }
   .wrap-ss {
      display: -webkit-box;
@@ -825,6 +800,21 @@ body {
   .main .third-section .list-container ul li {
     margin-top: 20px;
   }
+  .main .third-section .list-container ul li img {
+    max-width: 30px;
+    max-height: 30px;
+  }
+
+  .main .third-section .list-container ul li:nth-child(3) img{
+    max-width: 26px;
+    max-height: 26px;
+  }
+
+  .main .third-section .list-container ul li:nth-child(4) img{
+    max-width: 20px;
+    max-height: 36px;
+  }
+
   .main .third-section .list-container h3 {
     font-size: 1.8rem;
     text-align: center;
@@ -836,7 +826,7 @@ body {
   }
   .main .third-section .condition-deal{
     display: block;
-    margin: 8vh auto 5vh auto;
+    margin: 10vh auto 5vh auto;
     padding: 0 20px;
   }
   .main .third-section .button-container {
@@ -914,6 +904,10 @@ body {
   .main .second-section {
     background-size: 669% 100%;
     position: static;
+    margin-top: -50vh !important;
+  }
+  .main .second-section .wrap-ss .ss-description .text-controls-responsive {
+    margin: 10vh auto;
   }
   .main .second-section .wrap-ss .ss-app-icon {
     margin: 20vh 0 10vh 0
@@ -923,6 +917,9 @@ body {
   }
   .main .third-section .button-container {
     width: 53%;
+  }
+  .main .third-section .condition-deal {
+    margin: 20vh auto 5vh auto;
   }
   .main .forthy-section .testimonials-container .third-testimonial {
     margin-top: 8vh;
