@@ -53,6 +53,9 @@ body {
 /*  -------------------------------------header container*/
 .main .header {
   background: no-repeat  url("../img/resources/background.png") fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 
 }
@@ -270,6 +273,9 @@ body {
 /*---------------------------------------------------------------third-section*/
 .main .third-section {
   background: no-repeat url("../img/resources/third-section.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   height: auto;
   position: relative;
@@ -373,7 +379,7 @@ body {
 .main .third-section .list-container ul li img {
   width: 30px;
   height: auto;
-  margin-right: 1.8vw;
+  margin-right: 21px;
 }
 
 .main .third-section .list-container ul li:nth-child(3) img{
@@ -415,6 +421,9 @@ body {
 /*-------------------------------------------------------------------- forthy-section*/
 .main .forthy-section {
   background: no-repeat url("../img/resources/forthy-section.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   padding: 10vh 0 5vh 0;
   display: -webkit-box;
@@ -554,6 +563,9 @@ body {
   }
   .main .header {
     background-position-x: 50%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
   }
   .main .header .header-description {
@@ -668,7 +680,7 @@ body {
 
 
 @media screen and  (max-width: 750px) {
-  /*----------------hide elemetn br for description text in header*/
+  /*----------------hide element br in header*/
   .hide {
     display: none;
   }
@@ -681,7 +693,10 @@ body {
   }
 
   .main .header {
-    background-size: cover;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
     background-position-x: 50%;
     height: auto;
   }
