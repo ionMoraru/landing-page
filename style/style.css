@@ -800,7 +800,7 @@ margin-bottom: 20px;
     font-size: 1.2rem;
   }
   .main .third-section {
-    height: auto;
+    height: 875px;
     position: static;
   }
   .main .third-section .ts-title {
@@ -917,6 +917,7 @@ margin-bottom: 20px;
   }
   .main .third-section {
     position: static;
+    height: 625px;
   }
   .main .third-section .button-container {
     width: 53%;
