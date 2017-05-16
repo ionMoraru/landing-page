@@ -373,7 +373,7 @@ body {
 .main .third-section .list-container ul li img {
   width: 30px;
   height: auto;
-  margin-right: 21px;
+  margin-right: 1.8vw;
 }
 
 .main .third-section .list-container ul li:nth-child(3) img{
