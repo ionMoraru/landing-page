@@ -707,6 +707,7 @@ margin-bottom: 20px;
   .main .header {
     background-size: cover;
     background-position-x: 50%;
+    height: auto;
   }
   .main .header .header-description {
     margin: 35vh 0;
@@ -719,7 +720,7 @@ margin-bottom: 20px;
     font-size: 1.15rem;
   }
   .main .second-section {
-    height: 100%;
+    height: auto;
     padding: 24vh 0 0 0;
     background-size: 500% 100%;
     position: static;
@@ -799,7 +800,7 @@ margin-bottom: 20px;
     font-size: 1.2rem;
   }
   .main .third-section {
-    height: 100%;
+    height: auto;
     position: static;
   }
   .main .third-section .ts-title {
@@ -850,7 +851,7 @@ margin-bottom: 20px;
   }
 
   .main .forthy-section {
-    height: 100%;
+    height: auto;
   }
   .main .forthy-section .testimonials-container {
     display: -webkit-box;
