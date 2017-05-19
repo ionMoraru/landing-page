@@ -130,6 +130,11 @@ body {
 }
 
 /*------------------------------------------------------second-section description*/
+
+.main .second-section .wrap-ss .text-slide {
+  position: absolute;
+  width: 350px;
+}
 .main .second-section .wrap-ss .ss-description h1 {
   font-family: 'ProximaNova-Bold';
   font-size: 40px;
@@ -141,7 +146,7 @@ body {
   text-align: left;
   margin-bottom: 73.5px;
 }
-.main .second-section .wrap-ss .ss-description .cup-icon {
+.main .second-section .wrap-ss .ss-description .icons {
   font-size: 40px;
   display: block;
   margin: 0 auto 10.5px auto;
@@ -155,7 +160,7 @@ body {
   font-size: 1.5rem;
   color: #ffffff;
   letter-spacing: 0;
-  text-align: left;
+  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -167,7 +172,7 @@ body {
   font-size: 1.5rem;
   color: #ffffff;
   letter-spacing: 0;
-  text-align: left;
+  text-align: center;
 }
 
 /*------------------------------------------------------second-section iphone*/
@@ -182,13 +187,20 @@ body {
   position: relative;
 }
 
-.main .second-section .wrap-ss .ss-phone .screen-1{
+.main .second-section .wrap-ss .ss-phone .mySlides {
+  display:none;
+}
+
+
+
+.main .second-section .wrap-ss .ss-phone .screen{
   width:   232px;
   height: 407px;
   position: absolute;
   top: 54px;
   left: 57px;
 }
+
 
 .main .second-section .wrap-ss .ss-phone .slider-controls {
   position: absolute;
@@ -228,6 +240,16 @@ body {
   height:12px;
   border-radius:100%;
   margin-right: 2px;
+}
+
+.main .second-section .wrap-ss .ss-phone .slider-controls .active{
+  opacity:0.36;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=36)";
+  background:#000000;
+  width:10px;
+  height:10px;
+  border-radius:100%;
+  margin-right: 4px;
 }
 
 /*------------------------------------------------------second-section application icon*/
@@ -580,7 +602,7 @@ body {
   }
   .main .second-section {
     margin-top: -16%;
-    padding: 27vh 0 9vh 0;
+    padding: 20vh 0 9vh 0;
   }
   .wrap-ss {
     display: -webkit-box;
@@ -641,11 +663,13 @@ body {
     -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   }
-
+  .main .second-section .wrap-ss .text-slide {
+    position: static;
+  }
   .main .second-section .wrap-ss .ss-description .text-controls-responsive {
     width: 275px;
     display: block;
-    margin: 5vh auto;
+    margin: 8% auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -715,7 +739,7 @@ body {
   }
   .main .second-section {
     height: auto;
-    padding: 24vh 0 0 0;
+    padding: 20vh 0 0 0;
     background-size: 500% 100%;
     position: static;
     margin-top: -20vh !important;
@@ -733,6 +757,9 @@ body {
     padding: 0 2vh;
     margin: 0 auto;
   }
+  .main .second-section .wrap-ss .text-slide {
+    position: static;
+  }
   .main .second-section .wrap-ss .ss-description h1 {
     font-size: 1.5rem;
     margin-bottom: 36.5px;
@@ -749,9 +776,9 @@ body {
   .main .second-section .wrap-ss .ss-phone .iphone-screen {
     display: none;
   }
-  .main .second-section .wrap-ss .ss-phone .screen-1 {
+  .main .second-section .wrap-ss .ss-phone .screen {
     position: static;
-    margin: 5vh auto 6vh;
+    margin: 3vh auto 4vh;
     display: block;
   }
   .main .second-section .wrap-ss .ss-phone .slider-controls {
@@ -760,7 +787,7 @@ body {
   .main .second-section .wrap-ss .ss-description .text-controls-responsive {
     width: 275px;
     display: block;
-    margin: 5vh auto;
+    margin: 8% auto 10%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -789,7 +816,7 @@ body {
     margin-right: 2px;
   }
   .main .second-section .wrap-ss .ss-app-icon {
-    margin: 12vh 0;
+    margin: 6vh 0;
   }
   .main .second-section .wrap-ss .ss-app-icon p {
     font-size: 1.2rem;
