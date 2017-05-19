@@ -134,6 +134,7 @@ body {
 .main .second-section .wrap-ss .text-slide {
   position: absolute;
   width: 350px;
+  height: 500px;
 }
 .main .second-section .wrap-ss .ss-description h1 {
   font-family: 'ProximaNova-Bold';
@@ -602,7 +603,7 @@ body {
   }
   .main .second-section {
     margin-top: -16%;
-    padding: 20vh 0 9vh 0;
+    padding: 25vh 0 9vh 0;
   }
   .wrap-ss {
     display: -webkit-box;
@@ -665,6 +666,7 @@ body {
   }
   .main .second-section .wrap-ss .text-slide {
     position: static;
+    width: 100%;
   }
   .main .second-section .wrap-ss .ss-description .text-controls-responsive {
     width: 275px;
@@ -739,7 +741,7 @@ body {
   }
   .main .second-section {
     height: auto;
-    padding: 20vh 0 0 0;
+    padding: 23vh 0 0 0;
     background-size: 500% 100%;
     position: static;
     margin-top: -20vh !important;
@@ -759,6 +761,7 @@ body {
   }
   .main .second-section .wrap-ss .text-slide {
     position: static;
+    width: 100%;
   }
   .main .second-section .wrap-ss .ss-description h1 {
     font-size: 1.5rem;
