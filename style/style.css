@@ -82,7 +82,7 @@ body {
   text-shadow: 0 2px 4px rgba(0,0,0,0.50);
   text-align:center;
   width: 100vw;
-  margin: -10% auto 1% auto;
+  margin: -20vh auto 0 auto;
 }
 
 .main .header .header-description p {
@@ -95,16 +95,16 @@ body {
   letter-spacing: 0;
   text-align: center;
   padding: 0 20px;
-  margin: 7vh auto 0 auto;
+  margin: 7vh auto -7vh auto;
 }
 
 /*------------------------------------------------------second-section*/
 .main .second-section {
   background: no-repeat url("../img/resources/second-section.png");
   background-size: 100% 100%;
-  margin-top: -25%;
+  margin-top: -38vh;
   height: auto;
-  padding: 21vh 0 14vh 0;
+  padding: 28vh 0 14vh 0;
   position: relative;
 }
 
@@ -123,7 +123,6 @@ body {
       justify-content: space-around;
   width: 90vw;
   margin: 0 auto;
-  padding: 9vh 0 0 0;
 }
 /*------------------------------------------------------second-section containers*/
 .main .second-section .wrap-ss  .ss-container {
@@ -134,6 +133,7 @@ body {
 
 .main .second-section .wrap-ss .text-slide {
   position: absolute;
+  display: none;
   width: 350px;
   height: 500px;
 }
@@ -577,11 +577,27 @@ body {
 
 /*---------------------------------------------responsive*/
 @media screen and  (min-width: 1500px) and (max-width: 3000px) {
-  .main .second-section {
-    margin-top: -20%
+  .main .header .header-description p {
+    margin: 7vh auto 0vh auto;
+  }
+  .first-next-button {
+    right: 47.5vw;
   }
 }
-@media screen and  (max-width: 1000px) {
+@media screen and  (max-width: 1025px) {
+/*----------------hide elemetn br for description text in header*/
+  .hide {
+    display: none;
+  }
+  .main .header .header-description p {
+    padding: 0 10vw;
+  }
+  .main .second-section {
+    padding: 17vh 0 6vh 0;
+  }
+  .main .second-section .wrap-ss .ss-app-icon {
+    margin-top: 8vh;
+  }
   .first-next-button {
     display: none;
   }
@@ -590,15 +606,11 @@ body {
   }
   .main .second-section {
     background-size: 500% 100%;
-    margin-top: -15% !important;
+    margin-top: -25vh !important;
   }
 }
 /*------------------------------------------------------------- ipad and ipad pro responsive*/
 @media screen and  (min-width: 750px) and  (max-width: 1300px) {
-  /*----------------hide elemetn br for description text in header*/
-  .hide {
-    display: none;
-  }
   .main .header {
     background-position-x: 50%;
     -webkit-background-size: cover;
@@ -606,19 +618,16 @@ body {
     -o-background-size: cover;
     background-size: cover;
   }
-  .main .header .header-description {
+  /*.main .header .header-description {
     margin: 35% 0;
-  }
+  }*/
   .main .header .header-description h1 {
     font-size: 3.2rem;
   }
-  .main .header .header-description p {
-    padding: 0 40px;
-  }
-  .main .second-section {
+  /*.main .second-section {
     margin-top: -16%;
     padding: 20vh 0 9vh 0;
-  }
+  }*/
   .wrap-ss {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -627,10 +636,6 @@ body {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-    padding: 0;
-  }
-  .main .second-section .wrap-ss .ss-app-icon {
-    margin: 90px 0 0;
   }
   .main .third-section {
     height: auto;
@@ -662,13 +667,14 @@ body {
 @media screen and  (min-width: 750px) and  (max-width: 800px) {
   /*---------------------------------------navigation button*/
   .main .second-section {
-    margin-top: -16% !important;
+    margin-top: -18vh !important;
+    padding: 20vh 0 6vh 0;
+  }
+  .main .second-section .wrap-ss .text-slide {
+    height: 360px;
   }
   .main .second-section .wrap-ss  .ss-description {
     padding: 0 12px;
-  }
-  .main .second-section .wrap-ss .ss-phone .iphone-screen {
-    visibility: hidden;
   }
   .main .second-section .wrap-ss  .ss-app-icon {
     padding: 0 12px;
@@ -686,11 +692,9 @@ body {
     position: static;
     width: 100%;
   }
-
-  .main .third-section {
+  /*.main .third-section {
     position: static;
-  }
-
+  }*/
 }
 
 
@@ -698,6 +702,9 @@ body {
   /*----------------hide element br in header*/
   .hide {
     display: none;
+  }
+  .main .second-section .wrap-ss .ss-phone .iphone-screen {
+    visibility: hidden;
   }
   /*---------------------------------------navigation button*/
   .first-next-button {
@@ -717,22 +724,12 @@ body {
     background-position-x: 50%;
     height: auto;
   }
-  .main .header .header-description {
-    margin: 35vh 0;
-  }
+
   .main .header .header-description h1 {
     font-size: 1.7rem;
   }
   .main .header .header-description p {
-    padding: 0 40px;
-    font-size: 1.15rem;
-  }
-  .main .second-section {
-    height: auto;
-    padding: 12vh 0 0 0;
-    background-size: 500% 100%;
-    position: static;
-    margin-top: -20vh !important;
+    font-size: 1.12rem;
   }
   .wrap-ss {
      display: -webkit-box;
@@ -750,7 +747,7 @@ body {
   .main .second-section .wrap-ss .text-slide {
     position: static;
     width: 100%;
-    height: 305px
+    height: 260px
   }
   .main .second-section .wrap-ss .ss-description h1 {
     font-size: 1.5rem;
@@ -898,9 +895,6 @@ body {
   .main .header .logo {
     width: 40%;
   }
-  .main .header .header-description {
-    margin: 47vh 0;
-  }
   .main .header .header-description h1 {
     font-size: 1.5rem;
   }
@@ -910,10 +904,8 @@ body {
   .main .second-section {
     background-size: 669% 100%;
     position: static;
-    margin-top: -50vh !important;
-  }
-  .main .second-section .wrap-ss .ss-app-icon {
-    margin: 20vh 0 10vh 0
+    margin-top: -29vh !important;
+    padding: 25vh 0 6vh 0;
   }
   .main .third-section {
     position: static;
@@ -930,11 +922,11 @@ body {
 }
 @media screen and  (max-width: 400px) {
   .main .second-section .wrap-ss .text-slide {
-    height: 350px;
+    height: 300px;
   }
 }
 @media screen and  (max-width: 350px) {
   .main .second-section .wrap-ss .text-slide {
-    height: 390px;
+    height: 340px;
   }
 }
