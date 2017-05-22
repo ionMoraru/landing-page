@@ -21,26 +21,28 @@ function showSlides(n) {
   }
   slides[slideIndex - 1].style.display = "block";
   textSlide[slideIndex - 1].style.display = "block";
+  textSlide[slideIndex - 1].className += " text-slide-animation";
   dots[slideIndex-1].className += " active";
 
 }
 
 const windowWidth = window.innerWidth;
 if(windowWidth<800) {
-  let slideIndex = 0;
-  showSlides();
+  let slideTextIndex = 0;
+  showTextSlides();
 
-  function showSlides() {
+  function showTextSlides() {
     let i;
     const textSlide = document.getElementsByClassName('text-slide');
     for (i = 0; i < textSlide.length; i++) {
       textSlide[i].style.display = "none";
     }
-    slideIndex++;
-    if (slideIndex > textSlide.length) {slideIndex = 1}
-    textSlide[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 7000)
+    slideTextIndex++;
+    if (slideTextIndex > textSlide.length) {slideTextIndex = 1}
+    textSlide[slideTextIndex - 1].style.display = "block";
+    textSlide[slideIndex - 1].className += " text-slide-animation";
+    setTimeout(showTextSlides, 7000)
   }
 }else {
-  console.log('erro');
+  console.log('error');
 }

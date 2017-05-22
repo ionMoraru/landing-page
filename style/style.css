@@ -57,7 +57,6 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
 }
 
 .main .header .logo {
@@ -102,7 +101,7 @@ body {
 .main .second-section {
   background: no-repeat url("../img/resources/second-section.png");
   background-size: 100% 100%;
-  margin-top: -25%;
+  margin-top: -47vh;
   height: auto;
   padding: 21vh 0 14vh 0;
   position: relative;
@@ -135,8 +134,25 @@ body {
 .main .second-section .wrap-ss .text-slide {
   position: absolute;
   width: 350px;
-  height: 500px;
+  height: 310px;
 }
+
+.text-slide-animation {
+  -webkit-animation-name: opacity-text;
+  -webkit-animation-duration: 1s;
+  animation-name: opacity-text;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes opacity-text {
+  from {opacity: 0.3;}
+  to {opacity: 1;}
+}
+@keyframes opacity-text {
+  from {opacity: 0.3;}
+  to {opacity: 1;}
+}
+
 .main .second-section .wrap-ss .ss-description h1 {
   font-family: 'ProximaNova-Bold';
   font-size: 40px;
@@ -561,19 +577,22 @@ body {
 /*---------------------------------------------responsive*/
 @media screen and  (min-width: 1500px) and (max-width: 3000px) {
   .main .second-section {
-    margin-top: -20%
+    margin-top: -30vh;
   }
 }
-@media screen and  (max-width: 1000px) {
+@media screen and  (max-width: 1030px) {
   .first-next-button {
     display: none;
   }
   .second-next-button {
     display: none;
   }
+  .main .header .header-description h1 {
+    margin: 0;
+  }
   .main .second-section {
     background-size: 500% 100%;
-    margin-top: -15% !important;
+    margin-top: -11vh !important;
   }
 }
 /*------------------------------------------------------------- ipad and ipad pro responsive*/
@@ -599,8 +618,8 @@ body {
     padding: 0 40px;
   }
   .main .second-section {
-    margin-top: -16%;
-    padding: 20vh 0 9vh 0;
+    margin-top: -25vh;
+    padding: 25vh 0 9vh 0;
   }
   .wrap-ss {
     display: -webkit-box;
@@ -645,7 +664,7 @@ body {
 @media screen and  (min-width: 750px) and  (max-width: 800px) {
   /*---------------------------------------navigation button*/
   .main .second-section {
-    margin-top: -16% !important;
+    margin-top: -13vh !important;
   }
   .main .second-section .wrap-ss  .ss-description {
     padding: 0 12px;
@@ -712,10 +731,10 @@ body {
   }
   .main .second-section {
     height: auto;
-    padding: 5vh 0 0 0;
+    padding: 12vh 0 0 0;
     background-size: 500% 100%;
     position: static;
-    margin-top: -20vh !important;
+    margin-top: -17vh !important;
   }
   .wrap-ss {
      display: -webkit-box;
@@ -733,7 +752,7 @@ body {
   .main .second-section .wrap-ss .text-slide {
     position: static;
     width: 100%;
-    height: 305px
+    height: 260px
   }
   .main .second-section .wrap-ss .ss-description h1 {
     font-size: 1.5rem;
@@ -913,11 +932,14 @@ body {
 }
 @media screen and  (max-width: 400px) {
   .main .second-section .wrap-ss .text-slide {
-    height: 350px;
+    height: 270px;
   }
 }
 @media screen and  (max-width: 350px) {
+  .main .second-section {
+    margin-top: -34vh !important;
+  }
   .main .second-section .wrap-ss .text-slide {
-    height: 390px;
+    height: 300px;
   }
 }
