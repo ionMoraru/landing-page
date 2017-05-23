@@ -133,7 +133,6 @@ body {
 
 .main .second-section .wrap-ss .text-slide {
   position: absolute;
-  display: none;
   width: 350px;
   height: 500px;
 }
@@ -163,7 +162,7 @@ body {
   color: #ffffff;
   letter-spacing: 0;
   text-align: left;
-  margin-bottom: 73.5px;
+  margin-bottom: 41.5px;
 }
 .main .second-section .wrap-ss .ss-description .icons {
   font-size: 40px;
@@ -575,6 +574,63 @@ body {
   margin: 0 25px;
 }
 
+/*------------------------------------------------footer*/
+.hide-br-footer {
+  display: none;
+}
+.footer {
+  background: #364b59;
+  padding: 10vh 0 7vh;
+  color: rgba(255,255,255,0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer .social-links {
+  margin-bottom: 5vh;
+}
+.footer .social-links i {
+  margin: 1vh;
+}
+.footer .yny-logo  {
+  margin-bottom: 1vh;
+}
+
+.footer .speaken-yny {
+  font-family: 'ProximaNova-Regular';
+  font-size: 0.95rem;
+  margin-bottom: 5vh;
+  text-align: center;
+}
+.footer  a {
+  text-decoration: none;
+  color: rgba(255,255,255,0.6);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+.footer  a:hover {
+  text-decoration: underline;
+  color: rgba(255,255,255,0.8);
+}
+
+.footer .copyright {
+  font-family: 'ProximaNova-Regular';
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+
 /*---------------------------------------------responsive*/
 @media screen and  (min-width: 1500px) and (max-width: 3000px) {
   .main .header .header-description p {
@@ -923,6 +979,9 @@ body {
 @media screen and  (max-width: 400px) {
   .main .second-section .wrap-ss .text-slide {
     height: 300px;
+  }
+  .hide-br-footer {
+    display: block;
   }
 }
 @media screen and  (max-width: 350px) {
