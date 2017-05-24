@@ -3,11 +3,9 @@ showSlides(slideIndex);
 
 function currentSlide(n) {
   showSlides(slideIndex = n);
-  console.log(slideIndex);
 }
 function currentPhoto(n) {
   showSlides(slideIndex = n + 1);
-  console.log(slideIndex);
 }
 function showSlides(n) {
   let i;
@@ -46,8 +44,6 @@ if(windowWidth<800) {
     if (slideTextIndex > textSlide.length) {slideTextIndex = 1}
     textSlide[slideTextIndex - 1].style.display = "block";
     textSlide[slideIndex - 1].className += " text-slide-animation";
-    setTimeout(showTextSlides, 7000)
+    setTimeout(showTextSlides, 10000)
   }
-}else {
-  console.log('error');
 }
