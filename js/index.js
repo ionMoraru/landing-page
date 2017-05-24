@@ -15,6 +15,7 @@ function showSlides(n) {
   if (n > slides.length) {slideIndex = 1}
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
+    slides[i].className = slides[i].className.replace(" text-slide-animation", "");
   }
   for (i = 0; i < textSlide.length; i++) {
     textSlide[i].style.display = "none";
@@ -24,6 +25,7 @@ function showSlides(n) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex - 1].style.display = "block";
+  slides[slideIndex - 1].className += " text-slide-animation";
   textSlide[slideIndex - 1].style.display = "block";
   textSlide[slideIndex - 1].className += " text-slide-animation";
   dots[slideIndex-1].className += " active";
