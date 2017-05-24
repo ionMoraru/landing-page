@@ -145,7 +145,7 @@ body {
 }
 
 @-webkit-keyframes opacity-text {
-  from {opacity: 0.7;}
+  from {opacity: 0.5  ;}
   to {opacity: 1;}
 }
 @keyframes opacity-text {
