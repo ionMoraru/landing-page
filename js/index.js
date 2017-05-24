@@ -3,13 +3,19 @@ showSlides(slideIndex);
 
 function currentSlide(n) {
   showSlides(slideIndex = n);
+  console.log(slideIndex);
+}
+function currentPhoto(n) {
+  showSlides(slideIndex = n + 1);
+  console.log(slideIndex);
 }
 function showSlides(n) {
   let i;
-
   const slides = document.getElementsByClassName('mySlides');
   const textSlide = document.getElementsByClassName('text-slide');
   const dots = document.getElementsByClassName('dot');
+
+  if (n > slides.length) {slideIndex = 1}
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
@@ -23,7 +29,6 @@ function showSlides(n) {
   textSlide[slideIndex - 1].style.display = "block";
   textSlide[slideIndex - 1].className += " text-slide-animation";
   dots[slideIndex-1].className += " active";
-
 }
 
 const windowWidth = window.innerWidth;
